@@ -1,12 +1,16 @@
-package com.example.quizzapp
+package com.example.quizzapp.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.quizzapp.R
 
-class MenuActivity : AppCompatActivity() {
+class AuthenticationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_main)
+
+
+
     }
 }
