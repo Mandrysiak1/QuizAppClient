@@ -76,7 +76,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailEditText2"
+                android:id="@+id/LoginEmailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
@@ -85,7 +85,7 @@
                 android:textSize="15sp" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordEditText2"
+                android:id="@+id/LoginPasswordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -190,7 +190,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailEditText"
+                android:id="@+id/RegisterEmailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
@@ -199,7 +199,7 @@
                 android:textSize="15sp" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/RegisterPasswordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -209,7 +209,7 @@
                 android:textSize="15sp" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password2EditText"
+                android:id="@+id/RegisterConfirmPassword2EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"

@@ -5,7 +5,10 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 
-class AuthenticationViewMode(application: Application) : AndroidViewModel(application){
+class AuthenticationViewModel(application: Application) : AndroidViewModel(application){
+
+
+
 
     fun authenticate(userLogin:String,userPasswd:String){
         Log.d(TAG, "Zalogowano użytkownika: $userLogin")

@@ -12,10 +12,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.quizzapp.R
+import com.example.quizzapp.vm.AuthenticationViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 class AuthenticationActivity : AppCompatActivity() {
+
+
+
+    private lateinit var viewModel: AuthenticationViewModel
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +60,10 @@ class AuthenticationActivity : AppCompatActivity() {
 
         button_forgetPasswd.setOnClickListener {
             Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
+        }
+
+        loginButton.setOnClickListener{
+            viewModel.authenticate(LoginEmailEditText.text.toString(),LoginPasswordEditText.text.toString())
         }
 
 
