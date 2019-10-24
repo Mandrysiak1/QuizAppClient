@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">QuizzApp</string>
-    <string name="login">Login:</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
     <string name="passwf">Password:</string>
     <string name="log">Log in</string>
     <string name="title_activity_main_menus">MainMenusActivity</string>
@@ -10,11 +12,20 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="booki">BookI</string>
+    <string name="welcome_back">Welcome</string>
+    <string name="skip">Skip</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="author">to QuizApp by Maciej Andrysiak</string>
 </resources>
