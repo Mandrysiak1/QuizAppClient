@@ -13,4 +13,6 @@
     <color name="colorProgressBar">#FFCE511C</color>
 
     <color name="colorTextView">#83898E</color>
+    
+    <color name="TileBackgroundColor">#1ED761</color>
 </resources>

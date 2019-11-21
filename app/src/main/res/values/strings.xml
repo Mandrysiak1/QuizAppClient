@@ -28,4 +28,15 @@
     <string name="sign_in">Sign in</string>
     <string name="forget_password">Forget Password?</string>
     <string name="author">to QuizApp by Maciej Andrysiak</string>
+
+
+    <string name="tile_New_Game">New Game</string>
+    <string name="tile_Rewards">Rewards</string>
+    <string name="tile_Questions">Questions</string>
+    <string name="tile_Rankings">Rankings</string>
+
+    <string name="tile_New_Game_desc">Play The Game!</string>
+    <string name="tile_Rewards_desc">Check your rewards!</string>
+    <string name="tile_Questions_desc">Manage questions!</string>
+    <string name="tile_Rankings_desc">Check your position in rankings!</string>
 </resources>
