@@ -1,6 +1,7 @@
 package com.example.quizzapp.activities
 
 import android.animation.Animator
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -62,8 +63,10 @@ class AuthenticationActivity : AppCompatActivity() {
             Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
         }
 
-        loginButton.setOnClickListener{
-            viewModel.authenticate(LoginEmailEditText.text.toString(),LoginPasswordEditText.text.toString())
+        loginButton2.setOnClickListener{
+         //   viewModel.authenticate(LoginEmailEditText.text.toString(),LoginPasswordEditText.text.toString())
+            val intent = Intent(this,MenuActivity::class.java)
+            startActivity(intent)
         }
 
 

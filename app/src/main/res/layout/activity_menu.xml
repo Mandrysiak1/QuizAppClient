@@ -19,7 +19,7 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/bankcardId"
+            android:id="@+id/newGameCardView"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
@@ -37,8 +37,7 @@
                     android:layout_width="81dp"
                     android:layout_height="82dp"
                     android:background="@drawable/newgame"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_attach_money_black_24dp" />
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -51,8 +50,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,9 +85,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/cerclebackgroundpink"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -97,13 +93,12 @@
                     android:layout_marginTop="10dp"
                     android:text="Ideas"
                     android:textStyle="bold"
-                    tools:text="?????????????" />
+                    tools:text="a" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -143,8 +138,7 @@
                     android:layout_width="88dp"
                     android:layout_height="94dp"
                     android:background="@drawable/questions"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_control_point_black_24dp" />
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -157,8 +151,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="5dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -191,8 +184,7 @@
                     android:layout_height="93dp"
                     android:layout_marginTop="9dp"
                     android:background="@drawable/challanges"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_attach_file_black_24dp" />
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -205,8 +197,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="4dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="4dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -248,8 +239,7 @@
                     android:layout_width="62dp"
                     android:layout_height="48dp"
                     android:background="@drawable/gift"
-                    android:padding="30dp"
-                    android:src="@drawable/ic_wifi_black_24dp" />
+                    android:padding="30dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -262,8 +252,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="5dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"

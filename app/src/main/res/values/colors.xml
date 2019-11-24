@@ -14,5 +14,9 @@
 
     <color name="colorTextView">#83898E</color>
     
-    <color name="TileBackgroundColor">#1ED761</color>
+    <color name="TileBackgroundColor">#1DB954</color>
+
+    <color name="good">#1fff31</color>
+
+    <color name="bad">#ff1434</color>
 </resources>

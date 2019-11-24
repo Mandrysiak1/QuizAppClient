@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/rounded_corner"
+    android:orientation="horizontal">
+
+
+<com.mikhaellopez.circularimageview.CircularImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/gift"
+    app:civ_border_color="#4CAF50"
+    app:civ_border_width="0dp"
+    app:civ_shadow="false"
+    app:civ_shadow_color="#4CAF50"
+    app:civ_shadow_radius="10" />
+
+<LinearLayout
+    android:layout_width="165dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="153dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/slackey"
+        android:singleLine="false"
+        android:text="Super Gracz"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/arimo_bold_italic"
+        android:text="Current Score: 132"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="85dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_bad">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Your Bid: 10"
+                android:textAlignment="center"
+                android:textStyle="bold|italic" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:scaleX=".5"
+                android:scaleY=".8"
+                app:srcCompat="@android:drawable/button_onoff_indicator_on" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
