@@ -19,8 +19,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class AuthenticationActivity : AppCompatActivity() {
 
-
-
     private lateinit var viewModel: AuthenticationViewModel
 
 
@@ -68,13 +66,6 @@ class AuthenticationActivity : AppCompatActivity() {
             val intent = Intent(this,MenuActivity::class.java)
             startActivity(intent)
         }
-
-
-
-
-
-
-
     }
 
     private fun startAnimation() {
