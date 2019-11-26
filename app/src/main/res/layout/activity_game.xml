@@ -18,12 +18,40 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/custom_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/slackey"
+                android:text="Time left"
+                android:textAlignment="textStart"
+                android:textColor="@color/TileBackgroundColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/slackey"
+                android:text="Your Score"
+                android:textColor="@color/TileBackgroundColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -32,7 +60,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/slackey"
-                android:text="6/9"
+                android:text="6/10"
                 android:textAlignment="center"
                 android:textColor="@color/TileBackgroundColor"
                 android:textSize="36sp"
@@ -45,7 +73,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
                 android:fontFamily="@font/slackey"
                 android:text="@string/round"
                 android:textAlignment="center"
@@ -54,8 +81,38 @@
                 android:textColor="@color/TileBackgroundColor"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/slackey"
+                android:text="60"
+                android:textColor="@color/TileBackgroundColor"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="@+id/textView13"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/slackey"
+                android:text="99"
+                android:textColor="@color/TileBackgroundColor"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="@+id/textView14"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -66,6 +123,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_border"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -443,9 +501,10 @@
                     android:layout_margin="15dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="2dp"
-                    android:fontFamily="@font/amiko_semibold"
+                    android:fontFamily="@font/capriola"
                     android:text="Jakiego koloru jest czerwony maluch, który stoi pod blokiem?"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     app:autoSizeTextType="uniform"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -454,54 +513,58 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
-                android:id="@+id/AnserwsAB"
+                android:id="@+id/AnswerAB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/anserw_A"
+                    android:id="@+id/AnswerA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner3"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="A: Czerowny" />
 
                 <Button
-                    android:id="@+id/anserw_B"
+                    android:id="@+id/AnswerB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner3"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="B:Niebieski" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/AnserwsCD"
+                android:id="@+id/AnswerCD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/anserw_C"
+                    android:id="@+id/AnswerC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner3"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="C:Fioletowy" />
 
                 <Button
-                    android:id="@+id/anserwD"
+                    android:id="@+id/AnswerD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner3"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="D:Nie wiem" />
             </LinearLayout>
         </LinearLayout>

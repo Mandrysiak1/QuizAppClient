@@ -16,25 +16,23 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/gradle.properties" line="20" />
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c89e0e22-fbad-4058-a5e3-a9def27ba455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/amiko_semibold.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lobby.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/capriola.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/activities/AuthenticationActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/activities/AuthenticationActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/activities/GameActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/activities/GameActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lobby.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lobby.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,7 @@
       </content>
     </window>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="R58M42SP8DX" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_25" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -79,7 +77,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
@@ -89,12 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="50" />
+            <state relative-caret-position="317">
+              <caret line="259" column="59" selection-start-line="259" selection-start-column="59" selection-end-line="259" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -103,10 +110,24 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="315" column="49" selection-start-line="315" selection-start-column="49" selection-end-line="315" selection-end-column="49" />
+            <state relative-caret-position="-4834">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/button_drawable.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -114,33 +135,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner_bad.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner_good.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -170,8 +164,8 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lobby.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="187">
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -214,7 +208,6 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/vm/AuthenticationViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/Services/Services.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/round_img.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner.xml" />
@@ -232,12 +225,13 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/activities/GameActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/activities/AuthenticationActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lobby.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lobby.xml" />
       </list>
     </option>
   </component>
@@ -472,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574359027775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some changes">
+      <created>1574705198403</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574705198404</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -528,13 +529,13 @@
       <window_info id="Resources Explorer" order="7" weight="0.3295302" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32936078" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.78304905" weight="0.32936078" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5010661" side_tool="true" weight="0.33044422" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49945474" visible="true" weight="0.19393283" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.08848614" side_tool="true" weight="0.43228602" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.91151386" weight="0.43228602" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32936078" />
@@ -551,7 +552,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login activty" />
     <MESSAGE value="menu activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu activity" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,7 +568,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/ui/gallery/GalleryViewModel.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_menus.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/MainMenusActivity.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quizzapp/vm/Authentication.kt" />
@@ -666,13 +667,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/challanges.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/round_img.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" />
@@ -774,13 +768,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/background_color_book.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -840,35 +827,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/button_drawable.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lobby.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="315" column="49" selection-start-line="315" selection-start-column="49" selection-end-line="315" selection-end-column="49" />
+        <state relative-caret-position="-4834">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_border.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="50" />
+        <state relative-caret-position="317">
+          <caret line="259" column="59" selection-start-line="259" selection-start-column="59" selection-end-line="259" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
