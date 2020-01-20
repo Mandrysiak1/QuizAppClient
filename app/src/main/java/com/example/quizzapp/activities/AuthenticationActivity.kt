@@ -4,14 +4,13 @@ import android.animation.Animator
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
-import android.view.View
 import android.view.View.*
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProviders
 import com.example.quizzapp.R
 import com.example.quizzapp.vm.AuthenticationViewModel
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,7 +18,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class AuthenticationActivity : AppCompatActivity() {
 
+
     private lateinit var viewModel: AuthenticationViewModel
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +30,9 @@ class AuthenticationActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
 
+        viewModel = ViewModelProviders.of(this).get(AuthenticationViewModel::class.java)
         setUpOnClick()
+
 
 
         object : CountDownTimer(5000, 1000) {
@@ -62,7 +65,7 @@ class AuthenticationActivity : AppCompatActivity() {
         }
 
         loginButton2.setOnClickListener{
-         //   viewModel.authenticate(LoginEmailEditText.text.toString(),LoginPasswordEditText.text.toString())
+            viewModel.authenticate(LoginEmailEditText.text?.replace("\\s".toRegex(), "").toString(),LoginPasswordEditText.text.toString())
             val intent = Intent(this,MenuActivity::class.java)
             startActivity(intent)
         }
