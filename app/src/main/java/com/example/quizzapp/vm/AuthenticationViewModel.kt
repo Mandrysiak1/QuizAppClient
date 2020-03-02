@@ -14,23 +14,36 @@ import java.io.IOException
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.widget.Toast
+import androidx.lifecycle.MutableLiveData
+import com.example.quizzapp.objects.RegisterData
 
 
+class AuthenticationViewModel(application: Application) : AndroidViewModel(application) {
 
- class AuthenticationViewModel(application: Application) : AndroidViewModel(application) {
+    val login : MutableLiveData<String> by lazy {
+         MutableLiveData<String>()
+     }
+
+    val passwd: MutableLiveData<String> by lazy {
+        MutableLiveData<String>()
+    }
 
 
-    private var _token :String = ""
+    val isLogged: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
+    val isRegistered: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
 
-    var token : String
-        get() = _token
-        set(value){
-            _token = value
-        }
+    fun authenticate(){
+        NetModule.login(LoginData(passwd.value.toString(),login.value.toString()),isLogged)
+    }
 
-    fun authenticate(userLogin:String,userPasswd:String){
-        Log.d("LogData",userLogin + userPasswd)
-        NetModule.login(LoginData(userPasswd,userLogin))
+    fun register(email:String,passwd:String)
+    {
+        NetModule.register(RegisterData(email,passwd),isRegistered)
     }
 
     companion object{

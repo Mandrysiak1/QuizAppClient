@@ -29,6 +29,7 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/slackey"
                 android:text="Time left"
@@ -41,7 +42,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/yourScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -56,18 +57,18 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/round_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
                 android:fontFamily="@font/slackey"
-                android:text="6/10"
+                android:text="2/10"
                 android:textAlignment="center"
                 android:textColor="@color/TileBackgroundColor"
-                android:textSize="36sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <TextView
@@ -75,6 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
                 android:fontFamily="@font/slackey"
                 android:text="@string/round"
                 android:textAlignment="center"
@@ -83,52 +85,52 @@
                 android:textColor="@color/TileBackgroundColor"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/timeLeftNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/slackey"
-                android:text="60"
+                android:text="34"
                 android:textColor="@color/TileBackgroundColor"
-                android:textSize="36sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:autoSizeTextType="uniform"
-                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintBottom_toBottomOf="@+id/round_number"
                 app:layout_constraintEnd_toEndOf="@+id/textView13"
                 app:layout_constraintStart_toStartOf="@+id/textView13"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/yourScoreNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/slackey"
-                android:text="99"
+                android:text="25"
                 android:textColor="@color/TileBackgroundColor"
-                android:textSize="36sp"
+                android:textSize="24sp"
                 app:autoSizeTextType="uniform"
-                app:layout_constraintBottom_toBottomOf="@+id/textView2"
-                app:layout_constraintEnd_toEndOf="@+id/textView14"
-                app:layout_constraintStart_toStartOf="@+id/textView14"
-                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                app:layout_constraintBottom_toBottomOf="@+id/round_number"
+                app:layout_constraintEnd_toEndOf="@+id/yourScore"
+                app:layout_constraintStart_toStartOf="@+id/yourScore"
+                app:layout_constraintTop_toBottomOf="@+id/yourScore" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:id="@+id/Players"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/custom_border"
             android:orientation="vertical"
+            android:weightSum="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/HeadLayout">
@@ -157,7 +159,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/player1ID"
                         style="@style/Widget.AppCompat.TextView"
                         android:layout_width="153dp"
                         android:layout_height="30dp"
@@ -168,19 +170,19 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/slackey"
                         android:singleLine="false"
-                        android:text="Super Gracz"
+                        android:text="Test1"
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
                         android:textSize="24sp"
                         app:autoSizeTextType="uniform" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/player1Score"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/arimo_bold_italic"
-                        android:text="Current Score: 132"
+                        android:text="Current Score: 35"
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
@@ -198,20 +200,22 @@
                         android:orientation="vertical">
 
                         <FrameLayout
+                            android:id="@+id/player1bidFrame"
                             android:layout_width="85dp"
                             android:layout_height="0dp"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/rounded_corner_bad">
+                            android:background="@drawable/rounded_corner_good">
 
                             <Button
-                                android:id="@+id/button4"
+                                android:id="@+id/player1bid"
                                 android:layout_width="85dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="@android:color/transparent"
-                                android:text="Your Bid: 10"
+                                android:text="Your Bid: 0"
                                 android:textAlignment="center"
+                                android:textSize="10sp"
                                 android:textStyle="bold|italic" />
                         </FrameLayout>
 
@@ -223,7 +227,7 @@
                             android:orientation="horizontal">
 
                             <ImageButton
-                                android:id="@+id/imageButton"
+                                android:id="@+id/player1plus"
                                 android:layout_width="48dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -231,7 +235,7 @@
                                 app:srcCompat="@android:drawable/ic_input_add" />
 
                             <ImageButton
-                                android:id="@+id/imageButton2"
+                                android:id="@+id/player1minus"
                                 android:layout_width="50dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -250,16 +254,17 @@
             <LinearLayout
                 android:id="@+id/Player2"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="100sp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_corner"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="invisible">
 
 
                 <com.mikhaellopez.circularimageview.CircularImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/player"
+                    android:src="@drawable/a1l"
                     app:civ_border_color="#4CAF50"
                     app:civ_border_width="0dp"
                     app:civ_shadow="false"
@@ -272,7 +277,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textViewe"
+                        android:id="@+id/player2ID"
                         style="@style/Widget.AppCompat.TextView"
                         android:layout_width="153dp"
                         android:layout_height="30dp"
@@ -283,19 +288,19 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/slackey"
                         android:singleLine="false"
-                        android:text="Super Gracz"
+                        android:text="Test2"
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
                         android:textSize="24sp"
                         app:autoSizeTextType="uniform" />
 
                     <TextView
-                        android:id="@+id/textVieww"
+                        android:id="@+id/player2Score"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/arimo_bold_italic"
-                        android:text="Current Score: 132"
+                        android:text="Current Score: 13"
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
@@ -313,6 +318,7 @@
                         android:orientation="vertical">
 
                         <FrameLayout
+                            android:id="@+id/player2bidFrame"
                             android:layout_width="85dp"
                             android:layout_height="0dp"
                             android:layout_margin="10dp"
@@ -320,13 +326,14 @@
                             android:background="@drawable/rounded_corner_bad">
 
                             <Button
-                                android:id="@+id/buttona"
+                                android:id="@+id/player2bid"
                                 android:layout_width="85dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:text="Your Bid: 10"
+                                android:background="@drawable/rounded_corner_good"
+                                android:text="Your Bid: 0"
                                 android:textAlignment="center"
+                                android:textSize="10sp"
                                 android:textStyle="bold|italic" />
                         </FrameLayout>
 
@@ -338,7 +345,7 @@
                             android:orientation="horizontal">
 
                             <ImageButton
-                                android:id="@+id/imageButtona"
+                                android:id="@+id/player2plus"
                                 android:layout_width="48dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -346,7 +353,7 @@
                                 app:srcCompat="@android:drawable/ic_input_add" />
 
                             <ImageButton
-                                android:id="@+id/imageButton2a"
+                                android:id="@+id/player2minus"
                                 android:layout_width="50dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -363,13 +370,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/Player4"
+                android:id="@+id/Player3"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="100sp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="horizontal"
-                android:visibility="visible">
+                android:visibility="invisible">
 
 
                 <com.mikhaellopez.circularimageview.CircularImageView
@@ -388,7 +395,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView31"
+                        android:id="@+id/player3ID"
                         style="@style/Widget.AppCompat.TextView"
                         android:layout_width="153dp"
                         android:layout_height="30dp"
@@ -406,7 +413,7 @@
                         app:autoSizeTextType="uniform" />
 
                     <TextView
-                        android:id="@+id/textView5t"
+                        android:id="@+id/player3Score"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -429,6 +436,7 @@
                         android:orientation="vertical">
 
                         <FrameLayout
+                            android:id="@+id/player3bidFrame"
                             android:layout_width="85dp"
                             android:layout_height="0dp"
                             android:layout_margin="10dp"
@@ -436,13 +444,14 @@
                             android:background="@drawable/rounded_corner_bad">
 
                             <Button
-                                android:id="@+id/button4t"
+                                android:id="@+id/player3bid"
                                 android:layout_width="85dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="@android:color/transparent"
                                 android:text="Your Bid: 10"
                                 android:textAlignment="center"
+                                android:textSize="10sp"
                                 android:textStyle="bold|italic" />
                         </FrameLayout>
 
@@ -454,7 +463,7 @@
                             android:orientation="horizontal">
 
                             <ImageButton
-                                android:id="@+id/imageButtont"
+                                android:id="@+id/player3plus"
                                 android:layout_width="48dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -462,7 +471,7 @@
                                 app:srcCompat="@android:drawable/ic_input_add" />
 
                             <ImageButton
-                                android:id="@+id/imageButton2t"
+                                android:id="@+id/player3minus"
                                 android:layout_width="50dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -481,13 +490,17 @@
 
         <LinearLayout
             android:id="@+id/QuestionLayout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/custom_border"
             android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -501,12 +514,12 @@
                 <TextView
                     android:id="@+id/Question_textView"
                     android:layout_width="320dp"
-                    android:layout_height="76dp"
+                    android:layout_height="50dp"
                     android:layout_margin="15dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/capriola"
-                    android:text="Jakiego koloru jest czerwony maluch, który stoi pod blokiem?"
+                    android:text="What language is most used on the internet?"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform"
@@ -519,58 +532,112 @@
             <LinearLayout
                 android:id="@+id/AnswerAB"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_margin="15dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/AnswerA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="4dp"
                     android:layout_weight="1"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeTextType="uniform"
                     android:background="@drawable/rounded_corner3"
                     android:fontFamily="@font/amiko_semibold"
-                    android:text="A: Czerowny" />
+                    android:text="A: English" />
 
                 <Button
                     android:id="@+id/AnswerB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="4dp"
                     android:layout_weight="1"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeTextType="uniform"
                     android:background="@drawable/rounded_corner3"
                     android:fontFamily="@font/amiko_semibold"
-                    android:text="B:Niebieski" />
+                    android:text="B:Chinese" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/AnswerCD"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_margin="15dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/AnswerC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="4dp"
                     android:layout_weight="1"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeTextType="uniform"
                     android:background="@drawable/rounded_corner3"
                     android:fontFamily="@font/amiko_semibold"
-                    android:text="C:Fioletowy" />
+                    android:text="C:Spanish" />
 
                 <Button
                     android:id="@+id/AnswerD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="4dp"
                     android:layout_weight="1"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeTextType="uniform"
                     android:background="@drawable/rounded_corner3"
                     android:fontFamily="@font/amiko_semibold"
-                    android:text="D:Nie wiem" />
+                    android:text="D:Klingtonasdasdad" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/afterGameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/QuestionLayout"
+            app:layout_constraintTop_toBottomOf="@+id/Players">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="200dp"
+                android:layout_height="47dp"
+                android:layout_margin="6sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/slackey"
+                android:text="the game is over "
+                android:textAlignment="center"
+                android:textColor="@color/TileBackgroundColor"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/sumUpText"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/slackey"
+                android:text="You win with points"
+                android:textColor="@color/TileBackgroundColor" />
+
+            <Button
+                android:id="@+id/backtoMenu"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_margin="32dp"
+                android:gravity="center"
+                android:text="Go back to Menu" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

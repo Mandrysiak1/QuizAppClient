@@ -17,16 +17,17 @@ class ServiceInterceptor : Interceptor {
 
         if(request.header("No-Authentication")==null){
 
-                val finalToken =  "Bearer "+token
-                request = request.newBuilder()
+            val finalToken =  "Bearer "+token
+            request = request.newBuilder()
 
-                    .addHeader("Authorization",finalToken)
-                    .addHeader("Content-Type","application/josn")
+                .addHeader("Authorization",finalToken)
+                .addHeader("Content-Type","application/josn")
 
-                    .build()
+                .build()
 
 
         }
+
 
         return chain.proceed(request)
     }

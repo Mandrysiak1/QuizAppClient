@@ -9,12 +9,12 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.annotation.JsonPropertyOrder
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder("username", "token")
+@JsonPropertyOrder("email", "token")
 class UserResponse {
 
-    @JsonProperty("username")
-    @get:JsonProperty("username")
-    @set:JsonProperty("username")
+    @JsonProperty("email")
+    @get:JsonProperty("email")
+    @set:JsonProperty("email")
     var username: String? = null
     @JsonProperty("token")
     @get:JsonProperty("token")
